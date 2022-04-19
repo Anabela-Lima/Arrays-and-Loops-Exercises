@@ -75,12 +75,12 @@ public class Runner {
 
         for (int i =0; i< numbers.size() -1; ++i)
         {
-            if (i % 2 == 0)                     // if number is divisible by 2,
-                evenNumbers.add(i);             // add that number (i) to the Even number arrays
+            if (i % 2 == 0)                          // if number is divisible by 2,
+                evenNumbers.add(i);                 // add that number (i) to the Even number arrays
 
         }
 
-        evenNumbers.remove(0);               // remove the element at index 0, recall arrays start with
+        evenNumbers.remove(0);                      // remove the element at index 0, recall arrays start with
                                                     // element at index 0, we had set initial condition is i=0 that
                                                     // that will have index 0
 
