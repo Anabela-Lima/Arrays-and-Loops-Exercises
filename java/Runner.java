@@ -40,9 +40,9 @@ public class Runner {
 
         // PSEUDOCODING
 
-        // start with some variable (data type (its a string but we can do int), call that variable i,
-        // and start it from 0 goes all the way to end of list, so i= scottighIslands.size -1, and we increment by 1 so iterating code to
-        // every time 1 island is printed (so we can print the next island name)
+        // start with some variable (data type integer, call that variable i) i corresponds to index number
+        // and start it from 0 goes all the way to end of list, so i= scottighIslands.size -1, and we increment by 1 so iterating code
+        // every time 1 island is printed (so we can then print the next island name)
 
 
         //CODE
@@ -61,6 +61,7 @@ public class Runner {
         //        NUMBERS
 
         List<Integer> numbers = new ArrayList<>();
+        
         Collections.addAll(numbers, 1, 1, 4, 2, 7, 1, 6, 15, 13, 99, 7);
 
           System.out.println("numbers: " + numbers);
@@ -70,7 +71,7 @@ public class Runner {
         List<Integer> evenNumbers = new ArrayList<>();   //  I want to Create an array list data type integer
 
 
-        // start with some variable i position 0, ends at end at size of array "numbers"  and increment every 1
+        // start with some variable i position 0, ends at end at index size of array i.e. 11 -1- index 10   and increment every 1
 
         for (int i =0; i< numbers.size() -1; ++i)
         {
@@ -94,12 +95,19 @@ public class Runner {
 
 
         // sort numbers from smallest to largest
+        
         Collections.sort(numbers);
+        
         // get one at last position = largest
+        
         int largest = (numbers.get(numbers.size() - 1));
+        
         System.out.println("Largest Number:" + largest);
+        
         // get one at start position i.e index 0
+        
         int smallest = (numbers.get(0));
+        
         System.out.println("Smallest Number:" + smallest);
 
         int Difference = largest - smallest;
@@ -124,7 +132,7 @@ public class Runner {
                                                                     // and number next to it i.e. index i+1 is equal
                                                                     // to 1
 
-                System.out.println( "1 next to 1 problem:  " + "true ");                         // print true
+                System.out.println( "1 next to 1 problem:  " + "true ");      // print true
         }
 */
 
@@ -157,17 +165,16 @@ public class Runner {
 //
 //          So [7, 13, 2] would have sum of 9.
 
-        int sum = 0;                                       // let us declare the sum to have initial value 0
+// ----------Enhanced loop solution -----------------
 
-        // start at position 0, to length of array, increment 1
-
-
+// let us declare the total  to have initial value 0
+               
         int total = 0;    // let total be 0 at start
 
-        for (int number : numbers) {            // run through loop
+        for (int number : numbers) {            // we have a run through loop
             if (number == (13)) {              //if I find number 13 then
-                break;
-            }                                   //...break i.e. abandon loop
+                break;                        //...break i.e. abandon loop and carry on with next line of code
+            }                                   
 
             //We then sum up the numbers
 
